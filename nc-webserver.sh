@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-host=127.0.0.1
-port=8888
+declare -r host='127.0.0.1'
+declare -r port='8888'
 
 while true; do
 body=$(cat <<EOF
@@ -22,6 +22,7 @@ HTTP/1.0 200 OK
 $body
 EOF
 )
-echo "---$((x=x+1))---"
-echo "$response" | nc -l $host $port
+
+echo "--- $((x=x+1)) ---"
+echo "$response" | nc -l "$host" "$port"
 done
