@@ -7,7 +7,7 @@ while true; do
 body="$(cat <<EOF
 <!doctype html>
 <html>
-<meta http-equiv="refresh" content="1">
+<meta http-equiv="refresh" content="5">
 <body>
 $(date)
 <br>
