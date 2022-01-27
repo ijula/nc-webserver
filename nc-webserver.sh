@@ -9,8 +9,11 @@ body="$(cat <<EOF
 <html>
 <meta http-equiv="refresh" content="1">
 <body>
-<h1>netcat webpage</h1>
 Date: $(date)
+<br>
+<pre>
+Top: $(top -b -n 1)
+</pre>
 </body>
 </html>
 EOF
