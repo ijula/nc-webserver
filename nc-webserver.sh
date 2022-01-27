@@ -9,10 +9,10 @@ body="$(cat <<EOF
 <html>
 <meta http-equiv="refresh" content="1">
 <body>
-Date: $(date)
+$(date)
 <br>
 <pre>
-Top: $(top -b -n 1)
+$(top -b -n 1)
 </pre>
 </body>
 </html>
