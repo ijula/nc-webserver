@@ -26,6 +26,7 @@ $body
 EOF
 )"
 
-echo "--- $((x=x+1)) ---"
+echo "--- $((x++)) ---"
+echo "http://$host:$port"
 echo "$response" | nc -l "$host" "$port"
 done
